@@ -5,10 +5,11 @@ metadata:
   labels:
     app: petclinic
 spec:
-  type: ClusterIP
+  type: LoadBalancer
   selector:
     app: petclinic
   ports:
-    - protocol: TCP
+    - name: http
+      protocol: TCP
       port: 80
       targetPort: 8080
