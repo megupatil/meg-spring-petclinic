@@ -1,5 +1,5 @@
 # Use OpenJDK 17 as the base image for Spring Boot 3.x compatibility
-FROM openjdk:17-jre-slim
+FROM eclipse-temurin:17-jre-alpine
 
 # Set working directory
 WORKDIR /app
