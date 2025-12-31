@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: petclinic
-          image: YOUR_REGISTRY/YOUR_USERNAME/meg-spring-petclinic:latest
+          image: <+artifact.image>
           ports:
             - containerPort: 8080
           env:
