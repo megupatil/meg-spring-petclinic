@@ -16,7 +16,8 @@ spec:
     spec:
       containers:
         - name: petclinic
-          image: image: {{.Values.image}}
+          # FIXED: Removed the duplicate "image:" key
+          image: {{.Values.image}}
           ports:
             - containerPort: 8080
           env:
